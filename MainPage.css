@@ -1,0 +1,53 @@
+img#coinstack {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 10px;
+    filter: invert(64%) sepia(57%) saturate(410%) hue-rotate(357deg) brightness(91%) contrast(84%);
+}
+
+header {
+    background-color: #0b1826;
+    color: white;
+}
+
+h1 {
+    margin: 0.5rem;
+    font-family: 'Times New Roman', serif;
+    letter-spacing: 0.1rem;
+    font-size: 3rem;
+    font-weight: bold;
+    background-image: linear-gradient(to right,
+            #462523 0,
+            #cb9b51 22%,
+            #f6e27a 45%,
+            #f6f2c0 50%,
+            #f6e27a 55%,
+            #cb9b51 78%,
+            #462523 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0rem;
+    margin-top: 0.2rem;
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.6rem;
+    color: rgb(170, 168, 168);
+    transform: skew(-0.20rad);
+}
+
+#citation {
+    font-style: italic;
+}
+
+.no-padding {
+    padding: 0;
+}
