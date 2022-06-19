@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./LoginScreen.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Adamina&family=Alice&family=Asap+Condensed:ital@0;1&family=Lobster&family=Merienda:wght@400;700&family=Roboto:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">
+    <title>Login Screen</title>
+</head>
+
+<body>
+    <main>
+        <header class="container-fluid">
+            <div id="logo" class="row justify-content-center">
+                <div class="col col-md-auto text-end align-self-center d-none d-md-block no-padding">
+                    <img id="coinstack" src="./obrazki/coin-stack.png" alt="image of stacked coins">
+                </div>
+                <div class="col col-auto text-start p-0">
+                    <h1>Budget Manager.com</h1>
+                </div>
+            </div>
+            <div id="citation" class="row justify-content-center">
+                <div class="col col-sm-auto">
+                    <h2><cite>Jesteśmy tym, co w swoim życiu powtarzamy. Doskonałość nie jest jednorazowym aktem, lecz
+                            nawykiem.</cite></h2>
+                    <h3>~ Arystoteles</h3>
+                </div>
+            </div>
+        </header>
+        <section id="workingSpace" class="container-fluid p-0">
+            <div class="row justify-content-center">
+                <div id="loginPanel" class="col-xl-4 col-lg-6 col-md-8 col-10 justify-content-center mt-5">
+                    <form action="#">
+                        <div>
+                            <div id="loginHeader" class="row text-center py-2 mb-4">
+                                <h1>Logowanie</h1>
+                            </div>
+                            <div class="form-group row pb-4 pt-4">
+                                <div class="col-md-3 col-1 p-0"></div>
+                                <div class="col-1 text-center p-0">
+                                    <label for="email" class="col d-flex align-items-center justify-content-end">
+                                        <img src="./obrazki/outline_email_black_24dp.png" class="p-1"
+                                            alt="icon of an envelope">
+                                    </label>
+                                </div>
+                                <div class="col-md-5 col-9 p-0">
+                                    <input type="email" id="email" class="form-control" placeholder="E-mail" required>
+                                </div>
+                                <div class="col-md-3 col-1 p-0"></div>
+                            </div>
+                            <div class="form-group row pb-2">
+                                <div class="col-md-3 col-1 p-0"></div>
+                                <div class="col-1 p-0">
+                                    <label for="password" class="col d-flex align-items-center justify-content-end">
+                                        <img src="./obrazki/outline_key_black_24dp.png" class="p-1"
+                                            alt="icon of a key">
+                                    </label>
+                                </div>
+                                <div class="col-md-5 col-9 p-0">
+                                    <input type="password" id="password" class="form-control" placeholder="Hasło"
+                                        required>
+                                </div>
+                                <div class="col-md-3 col-1 p-0"></div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-4 col-2 p-0"></div>
+                                <div class="form-check col-md-5 col-8 px-0 pb-4">
+                                    <input type="checkbox" id="rememberMe" name="rememberMe">
+                                    <label for="rememberMe">Zapamiętaj mnie</label>
+                                </div>
+                                <div class="col-md-3 col-2 p-0"></div>
+                            </div>
+                            <div class="row justify-content-center mb-5">
+                                <div class="col-md-3 col-2 p-0"></div>
+                                <nav class="col-md-6 col-8">
+                                    <button class="positiveLogin">Zaloguj się</button>
+                                </nav>
+                                <div class="col-md-3 col-2 p-0"></div>
+                            </div>
+                            <div class="row justify-content-end my-4">
+                                <div class="col-md-8 col-2 p-0"></div>
+                                <nav class="col-md-auto col-8">
+                                    <button class="negative">&#60;&#60; Wróć</button>
+                                </nav>
+                                <div class="col-md-1 col-2 p-0"></div>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
