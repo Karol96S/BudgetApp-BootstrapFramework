@@ -101,11 +101,13 @@ p.stepByStep {
     border: solid;
     border-width: 1px 0 0 0;
     border-color: rgb(184, 184, 184);
+    padding: 0;
 }
 
 .toolbarIcons {
     filter: invert(100%) sepia(72%) saturate(4641%) hue-rotate(180deg) brightness(117%) contrast(100%);
     margin-right: 0.5rem;
+    margin-bottom: 0.3rem;
     width: 1.4rem;
     height: auto;
 }
@@ -121,10 +123,34 @@ p.stepByStep {
 
 a {
     color: white !important;
-    font-size: 0.90rem;
+    font-size: 0.95rem;
 }
 
-#loggedInUser {
-    font-size: 0.90rem;
+a#loggedInUser.navbar-brand {
+    font-size: 0.95rem;
+    padding-top: 0;
+}
+
+a.nav-link.active {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#hamburgerIcon {
+    height: 2rem;
+}
+
+li:hover {
+    background-color: #0d3453;
+    transform: translateY(0.05rem);
+    border-radius: 5px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    background-color: #344a68;
 }
 
