@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./AddIncome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Adamina&family=Alice&family=Asap+Condensed:ital@0;1&family=Lobster&family=Merienda:wght@400;700&family=Roboto:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">
+    <title>Add Income</title>
+</head>
+
+<body>
+    <main>
+        <header class="container-fluid">
+            <div id="logo" class="row justify-content-center">
+                <div class="col col-md-auto text-end align-self-center d-none d-md-block no-padding">
+                    <img id="coinstack" src="./obrazki/coin-stack.png" alt="image of stacked coins">
+                </div>
+                <div class="col col-auto text-start p-0">
+                    <h1>Budget Manager.com</h1>
+                </div>
+            </div>
+            <div id="citation" class="row justify-content-center">
+                <div class="col col-sm-auto">
+                    <h2><cite>Jesteśmy tym, co w swoim życiu powtarzamy. Doskonałość nie jest jednorazowym aktem, lecz
+                            nawykiem.</cite></h2>
+                    <h3>~ Arystoteles</h3>
+                </div>
+            </div>
+            <div id="siteNavbar" class="row">
+                <nav id="navbarMainRow" class="navbar navbar-expand-lg">
+                    <div class="container-fluid align-content-center">
+                        <div class="col col-lg-1 py-lg-3 py-4">
+                            <a id="loggedInUser" class="navbar-brand" href="#">Zalogowany:</a>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"><img
+                                    src="./obrazki/white-24dp/1x/outline_menu_white_24dp.png" alt="hamburger menu"
+                                    id="hamburgerIcon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse col col-xl-10 col-lg-11 justify-content-center"
+                            id="navbarSupportedContent">
+                            <ul class="navbar-nav mb-2 mb-lg-0 justify-content-center">
+                                <li class="nav-item px-xl-2">
+                                    <a class="nav-link active" aria-current="page" href="#"><span><img
+                                                class="toolbarIcons" src="./obrazki/baseline_home_black_24dp.png"
+                                                alt="home icon"></span>Strona Główna</a>
+                                </li>
+                                <li class="nav-item px-xl-2">
+                                    <a class="nav-link active" href="#"><span><img class="toolbarIcons"
+                                                src="./obrazki/baseline_add_card_black_24dp.png"
+                                                alt="credit card plus icon"></span>Dodaj Przychód</a>
+                                </li>
+                                <li class="nav-item px-xl-2">
+                                    <a class="nav-link active" href="#"><span><img class="toolbarIcons"
+                                                src="./obrazki/baseline_shopping_bag_black_24dp.png"
+                                                alt="shopping bag icon"></span>Dodaj Wydatek</a>
+                                </li>
+                                <li class="nav-item px-xl-2">
+                                    <a class="nav-link active" href="#"><span><img class="toolbarIcons"
+                                                src="./obrazki/baseline_query_stats_black_24dp.png"
+                                                alt="chart with magnifying glass icon"></span>Sprawdź Bilans</a>
+                                </li>
+                                <li class="nav-item px-xl-2">
+                                    <a class="nav-link active" href="#"><span><img class="toolbarIcons"
+                                                src="./obrazki/baseline_settings_black_24dp.png"
+                                                alt="settings icon"></span>Ustawienia</a>
+                                </li>
+                                <li class="nav-item px-xl-2">
+                                    <a class="nav-link active" href="#"><span><img class="toolbarIcons"
+                                                src="./obrazki/baseline_logout_black_24dp.png"
+                                                alt="logout icon"></span>Wyloguj Się</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col col-xl-1 col-lg-0"></div>
+                </nav>
+            </div>
+        </header>
+        <section id="workingSpace" class="container-fluid p-0">
+            <div class="row justify-content-center text-center">
+                <div id="addIncomeTable" class="col-xl-4 col-lg-6 col-md-8 col-10 justify-content-center mt-5">
+                    <div id="addIncomeHeader" class="row text-center py-2 mb-4">
+                        <h1>- Wprowadź Przychód -</h1>
+                    </div>
+                    <form action="#">
+                        <div class="row">
+                            <div class="col col-md-1"></div>
+                            <div class="col col-md-3">
+                                <label for="incomeAmount">Kwota:</label>
+                            </div>
+                            <div class="col col-md-7">
+                                <div class="input-group">
+                                    <input type="number" id="incomeAmount" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                    <div class="input-group-append">
+                                      <span class="input-group-text">zł</span>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col col-md-1"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-md-1"></div>
+                            <div class="col col-md-3">
+                                <label for="date">Data:</label>
+                            </div>
+                            <div class="col col-md-7">
+                                <div class="input-group">
+                                    <input type="date" id="date" class="form-control">
+                                  </div>
+                            </div>
+                            <div class="col col-md-1"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-md-1"></div>
+                            <div class="col col-md-3">
+                                <legend id="category">Kategoria:</legend>
+                            </div>
+                            <div class="col col-md-7">
+                                <div class="row">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" id="wynagrodzenie"
+                                            name="categoryOfIncome" value="wynagrodzenie" required>
+                                        <label class="form-check-label" for="wynagrodzenie"
+                                            class="categoryOfIncome">Wynagrodzenie</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" id="odsetkiBankowe"
+                                            name="categoryOfIncome" value="odsetkiBankowe">
+                                        <label class="form-check-label" for="odsetkiBankowe"
+                                            class="categoryOfIncome">Odsetki Bankowe</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" id="allegro"
+                                            name="categoryOfIncome" value="allegro">
+                                        <label class="form-check-label" for="allegro" class="categoryOfIncome">Sprzedaż
+                                            na Allegro</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" id="inne" name="categoryOfIncome"
+                                            value="inne">
+                                        <label class="form-check-label" for="inne" class="categoryOfIncome">Inne</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-md-1"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-md-1"></div>
+                            <div class="col col-md-3">
+                                <label for="comment">Komentarz (opcjonalnie):</label>
+                            </div>
+                            <div class="col col-md-7">
+                                <div class="input-group">
+                                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                                  </div>
+                            </div>
+                            <div class="col col-md-1"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
