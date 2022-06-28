@@ -165,6 +165,12 @@ div#addIncomeTable {
     border-radius: 10px 10px 0 0;
 }
 
+#addIncomeTable {
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
 #addIncomeHeader {
     background-image: linear-gradient(to top, #18720f, #217d10, #2a8811, #349411, #3d9f11);    
     border-radius: 10px 10px 0 0;
@@ -180,3 +186,56 @@ div#addIncomeTable {
     border-radius: 0 0.25rem 0.25rem 0 !important;
 }
 
+.bold {
+    font-weight: bold!important;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1rem;
+    font-size: auto;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    border-color: #0b1826;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addIncome {
+    width:100%;
+    height: auto;
+    font-size: 1.1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-image: linear-gradient(to right top, #0a7a1d, #31891c, #4d9819, #67a715, #82b510);
+}
+
+.negative {
+    width: 100%;
+    height: auto;
+    font-size: 1.1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(179, 79, 79);
+}
+
+button:hover {
+    transform: translateY(0.05rem);
+    cursor: pointer;
+}
+
+#plusSign {
+    font-size: 1.4rem;
+}
+
+#goBackSign {
+    font-size: 1.4rem;
+}
