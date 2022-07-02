@@ -162,7 +162,7 @@ form {
 div#addIncomeTable {
     color: black;
     background-color: white;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 10px 10px;
 }
 
 #addIncomeTable {
@@ -238,4 +238,10 @@ button:hover {
 
 #goBackSign {
     font-size: 1.4rem;
+}
+
+@media screen and (max-width: 465px) {
+   #addIncomeHeader>h1{
+        font-size: 1.4rem !important;
+    }
 }
