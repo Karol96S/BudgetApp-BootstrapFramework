@@ -90,7 +90,7 @@
             <div class="row justify-content-center text-center">
                 <div id="addExpenseTable" class="col-xxl-5 col-xl-6 col-md-8 col-sm-10 col-11 justify-content-center mt-3 mt-sm-5">
                     <div id="addExpenseHeader" class="row text-center py-2 px-0 mb-4">
-                        <h1>- Wprowadź Przychód -</h1>
+                        <h1>- Wprowadź Wydatek -</h1>
                     </div>
                     <form action="#" class="text-end">
                         <div class="row py-2">
@@ -123,6 +123,40 @@
                             </div>
                             <div class="col col-md-1 d-none d-sm-block"></div>
                         </div>
+                        <div id="paymentMethods" class="row py-4">
+                            <div class="col col-md-1 d-none d-sm-block"></div>
+                            <div class="col col-md-3 col-3 mb-2">
+                                <label id="category" class="bold">Sposób płatności:</label>
+                            </div>
+                            <div class="col col-xs-9 d-block d-sm-none"></div>
+                            <div class="col col-md-7 col-sm-8 col-12 text-start">
+                                <div class="row">
+                                    <div class="form-check mx-3">
+                                        <input class="form-check-input" type="radio" id="cash"
+                                            name="categoryOfExpense" value="cash" required>
+                                        <label class="form-check-label" for="cash"
+                                            class="categoryOfExpense">Gotówka</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-check mx-3">
+                                        <input class="form-check-input" type="radio" id="debitCard"
+                                            name="categoryOfExpense" value="debitCard">
+                                        <label class="form-check-label" for="debitCard"
+                                            class="categoryOfExpense">Karta Debetowa</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-check mx-3">
+                                        <input class="form-check-input" type="radio" id="creditCard"
+                                            name="categoryOfExpense" value="creditCard">
+                                        <label class="form-check-label" for="creditCard" class="categoryOfExpense">Karta Kredytowa
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-md-1 d-none d-sm-block"></div>
+                        </div>
                         <div id="categories" class="row py-4">
                             <div class="col col-md-1 d-none d-sm-block"></div>
                             <div class="col col-md-3 col-3 mb-2">
@@ -132,33 +166,138 @@
                             <div class="col col-md-7 col-sm-8 col-12 text-start">
                                 <div class="row">
                                     <div class="form-check mx-3">
-                                        <input class="form-check-input" type="radio" id="wynagrodzenie"
-                                            name="categoryOfExpense" value="wynagrodzenie" required>
-                                        <label class="form-check-label" for="wynagrodzenie"
-                                            class="categoryOfExpense">Wynagrodzenie</label>
+                                        <input class="form-check-input" type="radio" id="food"
+                                            name="categoryOfExpense" value="food" required>
+                                        <label class="form-check-label" for="food"
+                                            class="categoryOfExpense">Jedzenie</label>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-check mx-3">
-                                        <input class="form-check-input" type="radio" id="odsetkiBankowe"
-                                            name="categoryOfExpense" value="odsetkiBankowe">
-                                        <label class="form-check-label" for="odsetkiBankowe"
-                                            class="categoryOfExpense">Odsetki Bankowe</label>
+                                        <input class="form-check-input" type="radio" id="rent"
+                                            name="categoryOfExpense" value="rent">
+                                        <label class="form-check-label" for="rent"
+                                            class="categoryOfExpense">Mieszkanie</label>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-check mx-3">
-                                        <input class="form-check-input" type="radio" id="allegro"
-                                            name="categoryOfExpense" value="allegro">
-                                        <label class="form-check-label" for="allegro" class="categoryOfExpense">Sprzedaż
-                                            na Allegro</label>
+                                        <input class="form-check-input" type="radio" id="commute"
+                                            name="categoryOfExpense" value="commute">
+                                        <label class="form-check-label" for="commute" 
+                                        class="categoryOfExpense">Transport</label>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-check mx-3">
-                                        <input class="form-check-input" type="radio" id="inne" name="categoryOfExpense"
-                                            value="inne">
-                                        <label class="form-check-label" for="inne" class="categoryOfExpense">Inne</label>
+                                        <input class="form-check-input" type="radio" id="telecomunication" name="categoryOfExpense"
+                                            value="telecomunication">
+                                        <label class="form-check-label" for="telecomunication"
+                                         class="categoryOfExpense">Telekomunikacja</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-check mx-3">
+                                        <input class="form-check-input" type="radio" id="healthcare"
+                                            name="categoryOfExpense" value="healthcare">
+                                        <label class="form-check-label" for="healthcare" 
+                                        class="categoryOfExpense">Opieka Zdrowotna</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-check mx-3">
+                                        <input class="form-check-input" type="radio" id="clothing"
+                                            name="categoryOfExpense" value="clothing">
+                                        <label class="form-check-label" for="clothing" 
+                                        class="categoryOfExpense">Ubranie</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-check mx-3">
+                                        <input class="form-check-input" type="radio" id="hygiene"
+                                            name="categoryOfExpense" value="hygiene">
+                                        <label class="form-check-label" for="hygiene" 
+                                        class="categoryOfExpense">Higiena</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-check mx-3">
+                                        <input class="form-check-input" type="radio" id="kids"
+                                            name="categoryOfExpense" value="kids">
+                                        <label class="form-check-label" for="kids" 
+                                        class="categoryOfExpense">Dzieci</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-check mx-3">
+                                        <input class="form-check-input" type="radio" id="entertainment"
+                                            name="categoryOfExpense" value="entertainment">
+                                        <label class="form-check-label" for="entertainment" 
+                                        class="categoryOfExpense">Rozrywka</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-check mx-3">
+                                        <input class="form-check-input" type="radio" id="trip"
+                                            name="categoryOfExpense" value="trip">
+                                        <label class="form-check-label" for="trip" 
+                                        class="categoryOfExpense">Wycieczka</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-check mx-3">
+                                        <input class="form-check-input" type="radio" id="course"
+                                            name="categoryOfExpense" value="course">
+                                        <label class="form-check-label" for="course" 
+                                        class="categoryOfExpense">Szkolenia</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-check mx-3">
+                                        <input class="form-check-input" type="radio" id="books"
+                                            name="categoryOfExpense" value="books">
+                                        <label class="form-check-label" for="books" 
+                                        class="categoryOfExpense">Książki</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-check mx-3">
+                                        <input class="form-check-input" type="radio" id="savings"
+                                            name="categoryOfExpense" value="savings">
+                                        <label class="form-check-label" for="savings" 
+                                        class="categoryOfExpense">Oszczędności</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-check mx-3">
+                                        <input class="form-check-input" type="radio" id="retirement"
+                                            name="categoryOfExpense" value="retirement">
+                                        <label class="form-check-label" for="retirement" 
+                                        class="categoryOfExpense">Na złotą jesień, czyli emeryturę</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-check mx-3">
+                                        <input class="form-check-input" type="radio" id="debt"
+                                            name="categoryOfExpense" value="debt">
+                                        <label class="form-check-label" for="debt" 
+                                        class="categoryOfExpense">Spłata Długów</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-check mx-3">
+                                        <input class="form-check-input" type="radio" id="charity"
+                                            name="categoryOfExpense" value="charity">
+                                        <label class="form-check-label" for="charity" 
+                                        class="categoryOfExpense">Darowizna</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-check mx-3">
+                                        <input class="form-check-input" type="radio" id="other"
+                                            name="categoryOfExpense" value="other">
+                                        <label class="form-check-label" for="other" 
+                                        class="categoryOfExpense">Inne Wydatki</label>
                                     </div>
                                 </div>
                             </div>
@@ -184,7 +323,7 @@
                                 <div class="row justify-content-end">
                                     <nav class="col col-md-8 col-12 text-center mb-4">
                                         <button class="addExpense py-2"><span id="plusSign">+</span>&#160;Dodaj
-                                            Przychód</button>
+                                            Wydatek</button>
                                     </nav>
                                     <nav class=" col col-md-4 col-12 text-center">
                                         <button class="negative py-2"><span
