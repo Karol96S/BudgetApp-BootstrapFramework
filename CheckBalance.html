@@ -91,17 +91,11 @@
                 <div class="col col-xl-8 col-lg-10 col-md-10 col-11 my-4">
                     <div id="chooseDate" class="col col-12 py-3">
                         <h2 class="display-6">Bilans za okres: 10.08.2012 - 22.05.2015</h2>
-                        <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button"
-                                data-toggle="dropdown">Dropdown
-                                Example
-                                <span class="caret"></span></button>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">HTML</a></li>
-                                <li><a href="#">CSS</a></li>
-                                <li><a href="#">JavaScript</a></li>
-                            </ul>
-                        </div>
+                        <select name="date" id="date">
+                            <option value="currentMonth">Bieżący miesiąc</option>
+                            <option value="lastMonth">Poprzedni miesiąc</option>
+                            <option value="custom">Niestandardowy</option>
+                        </select>
                     </div>
                 </div>
             </div>
@@ -274,6 +268,7 @@
     </main>
 
     <script src="js/bootstrap.js"></script>
+    
 </body>
 
 </html>

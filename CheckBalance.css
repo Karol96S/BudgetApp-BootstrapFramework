@@ -193,6 +193,62 @@ div#chooseDate {
     margin: 0;
 }
 
+select {
+    width: 25%;
+    height: 5%;
+    color: rgb(63, 63, 63);
+    background-color: white;
+    border: thin solid grey;
+    border-radius: 4px;
+    display: inline-block;
+    font: inherit;
+    font-family: 'Roboto', serif;
+    font-weight: bold;
+    letter-spacing: 0.15rem;
+    line-height: 1.5em;
+    padding: 0.5rem 3.5rem 0.5rem 1rem;
+
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image:
+        linear-gradient(45deg, transparent 50%, white 50%),
+        linear-gradient(135deg, white 50%, transparent 50%),
+        radial-gradient(rgb(164, 197, 207) 70%, transparent 72%);
+    background-position:
+        calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px),
+        calc(100% - .5em) .5em;
+    background-size:
+        5px 5px,
+        5px 5px,
+        1.5em 1.5em;
+    background-repeat: no-repeat;
+}
+
+select:focus {
+    color: rgb(63, 63, 63);
+    background-image:
+        linear-gradient(45deg, white 50%, transparent 50%),
+        linear-gradient(135deg, transparent 50%, white 50%),
+        radial-gradient(rgb(60, 106, 119) 70%, transparent 72%);
+    background-position:
+        calc(100% - 15px) 1em,
+        calc(100% - 20px) 1em,
+        calc(100% - .5em) .5em;
+    background-size:
+        5px 5px,
+        5px 5px,
+        1.5em 1.5em;
+    background-repeat: no-repeat;
+    border-color: green;
+    outline: 0;
+}
+
 option {
     color: black;
     font-weight: bold;
@@ -346,20 +402,27 @@ div#balanceSummaryMain {
     justify-content: center;
 }
 
-@media only screen and (max-width: 992px){
-    #chooseDate h2 {
-        font-size: 1rem;
+
+
+@media only screen and (max-width: 1400px) {
+    div#chooseDate {
+        display: flex;
+        flex-direction: column;
+    }
+
+    select#date {
+        margin-top: 0.6rem;
+        width: 60%;
     }
 }
 
-@media only screen and (max-width: 992px){
-    #chooseDate h2 {
-        font-size: 1rem;
+@media only screen and (max-width: 400px) {
+    div#chooseDate {
+        display: flex;
+        flex-direction: column;
     }
-}
 
-@media only screen and (max-width: 460px){
-    #chooseDate h2 {
-        font-size: 0.6rem;
+    select#date {
+        width: 85%;
     }
 }
