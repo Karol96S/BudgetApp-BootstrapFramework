@@ -107,7 +107,8 @@ form img {
     border-radius: 4px 0 0 4px;
 }
 
-#email, #password {
+#email,
+#password {
     height: 34px;
     border: solid;
     border-width: 1px 1px 1px 0;
@@ -120,14 +121,16 @@ form img {
     width: auto;
 }
 
-input#password:focus, input#email:focus {
+input#password:focus,
+input#email:focus {
     background-color:rgba(223, 222, 164, 0.13) !important;
     outline:0px !important;
     -webkit-appearance:none;
     box-shadow: none !important;
 }
 
-input#password:active, input#login:focus {
+input#password:active,
+input#login:focus {
     outline:0px !important;
     -webkit-appearance:none;
     box-shadow: none !important;
