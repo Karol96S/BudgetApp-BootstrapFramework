@@ -1,10 +1,10 @@
-html,body
-{
+html,
+body {
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 body {
@@ -97,7 +97,7 @@ p.stepByStep {
 
 #navbarMainRow {
     color: white;
-    background-image: linear-gradient(to top, #0b1826, #152130, #1f2b3a, #293544, #333f4f);  
+    background-image: linear-gradient(to top, #0b1826, #152130, #1f2b3a, #293544, #333f4f);
     border: solid;
     border-width: 1px 0 0 0;
     border-color: rgb(184, 184, 184);
@@ -171,7 +171,20 @@ li:hover {
     align-items: center;
 }
 
-.upperPanel h2 {
+div#chooseDate {
+    background-image: linear-gradient(to bottom, #2b66a4, #25548f, #1e427b, #173167, #0f2153);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    height: auto;
+    border-radius: 5px;
+}
+
+#chooseDate h2 {
+    font-size: 1.6rem;
+    font-size: auto;
     justify-content: center;
     align-content: center;
     font-family: 'Adamina', sans-serif;
@@ -181,9 +194,9 @@ li:hover {
 }
 
 option {
-      color: black;
-      font-weight: bold;
-  }
+    color: black;
+    font-weight: bold;
+}
 
 section.generalPanelsInfo {
     display: flex;
@@ -229,7 +242,7 @@ thead tr:not(:first-child) {
 thead tr:nth-of-type(1) th:nth-of-type(1) {
     text-align: center;
     font-size: 1.5rem;
-    color:#215580;
+    color: #215580;
 }
 
 th {
@@ -249,13 +262,15 @@ tbody tr td:nth-of-type(1) {
     text-align: center;
 }
 
-tr, td {
+tr,
+td {
     text-align: left;
     padding: 0.4rem;
 }
 
 tfoot td:nth-of-type(1) {
     text-align: center;
+    color: black;
 }
 
 #incomesTable tfoot td {
@@ -263,7 +278,8 @@ tfoot td:nth-of-type(1) {
     font-weight: bold;
 }
 
-#incomesTable tfoot, #expensesTable tfoot {
+#incomesTable tfoot,
+#expensesTable tfoot {
     box-shadow: 0px 1px 6px 0px rgb(0 0 0 / 29%);
 }
 
@@ -280,7 +296,7 @@ tfoot td:nth-of-type(1) {
     color: rgb(83, 12, 10);
 }
 
-footer {
+#balanceSummary {
     background-color: #dee5ec;
     border: solid 5px rgb(73, 106, 156);
     border-radius: 5px;
@@ -288,22 +304,22 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content:center;
+    align-content: center;
     margin: 1rem 0 2rem 0;
 }
 
-footer h2 {
+#balanceSummary h2 {
     color: black;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-family: 'Adamina', serif;
     letter-spacing: 0.1rem;
 }
 
-footer h2:nth-of-type(2) {
+#balanceSummary h2:nth-of-type(2) {
     font-size: 1rem;
 }
 
-footer p:nth-of-type(1) {
+#balanceSummary p:nth-of-type(1) {
     color: rgb(15, 85, 15);
     font-size: 1.3rem;
     font-family: 'Lato', serif;
@@ -311,22 +327,39 @@ footer p:nth-of-type(1) {
     letter-spacing: 0.1rem;
 }
 
-footer img {
+#balanceSummary img {
     padding: 0;
-    margin: 0;
+    margin: 0 0.4rem 0 0;
     height: 2.2rem;
     width: auto;
-    margin-top: 0.8rem;
-    margin-right: 0.4rem;
 }
 
-footer p, footer h2 {
+#balanceSummary p,
+#balanceSummary h2 {
     display: flex;
     justify-content: center;
 }
 
-div#balanceSummary {
+div#balanceSummaryMain {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+@media only screen and (max-width: 992px){
+    #chooseDate h2 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    #chooseDate h2 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 460px){
+    #chooseDate h2 {
+        font-size: 0.6rem;
+    }
 }
