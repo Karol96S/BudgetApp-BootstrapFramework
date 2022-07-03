@@ -153,3 +153,180 @@ li:hover {
     box-shadow: none;
     background-color: #344a68;
 }
+
+/*balance styles*/
+
+.balanceSheet {
+    background-image: url(./obrazki/homePageBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin-top: 0;
+    padding-top: 1.1%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upperPanel h2 {
+    justify-content: center;
+    align-content: center;
+    font-family: 'Adamina', sans-serif;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.15rem;
+    margin: 0;
+}
+
+option {
+      color: black;
+      font-weight: bold;
+  }
+
+section.generalPanelsInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+table {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    border-radius: 2px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.90rem;
+}
+
+.incomesExpensesTableContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dee5ec;
+    border-radius: 2px;
+}
+
+#incomesTable {
+    background-color: #dee5ec;
+}
+
+#expensesTable {
+    background-color: #dee5ec;
+}
+
+thead tr:not(:first-child) {
+    background-color: #343a40;
+    color: white;
+}
+
+thead tr:nth-of-type(1) th:nth-of-type(1) {
+    text-align: center;
+    font-size: 1.5rem;
+    color:#215580;
+}
+
+th {
+    padding: 0.4rem;
+}
+
+th.positionNumber {
+    text-align: center;
+}
+
+tbody tr {
+    background-color: white;
+    box-shadow: 0px 1px 6px 0px rgb(0 0 0 / 29%);
+}
+
+tbody tr td:nth-of-type(1) {
+    text-align: center;
+}
+
+tr, td {
+    text-align: left;
+    padding: 0.4rem;
+}
+
+tfoot td:nth-of-type(1) {
+    text-align: center;
+}
+
+#incomesTable tfoot td {
+    background-color: rgb(164, 218, 102);
+    font-weight: bold;
+}
+
+#incomesTable tfoot, #expensesTable tfoot {
+    box-shadow: 0px 1px 6px 0px rgb(0 0 0 / 29%);
+}
+
+#incomesTable tfoot td:nth-of-type(2) {
+    color: rgb(15, 85, 15);
+}
+
+#expensesTable tfoot td {
+    background-color: rgb(224, 112, 104);
+    font-weight: bold;
+}
+
+#expensesTable tfoot td:nth-of-type(2) {
+    color: rgb(83, 12, 10);
+}
+
+footer {
+    background-color: #dee5ec;
+    border: solid 5px rgb(73, 106, 156);
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content:center;
+    margin: 1rem 0 2rem 0;
+}
+
+footer h2 {
+    color: black;
+    font-size: 1.8rem;
+    font-family: 'Adamina', serif;
+    letter-spacing: 0.1rem;
+}
+
+footer h2:nth-of-type(2) {
+    font-size: 1rem;
+}
+
+footer p:nth-of-type(1) {
+    color: rgb(15, 85, 15);
+    font-size: 1.3rem;
+    font-family: 'Lato', serif;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+footer img {
+    padding: 0;
+    margin: 0;
+    height: 2.2rem;
+    width: auto;
+    margin-top: 0.8rem;
+    margin-right: 0.4rem;
+}
+
+footer p, footer h2 {
+    display: flex;
+    justify-content: center;
+}
+
+div#balanceSummary {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

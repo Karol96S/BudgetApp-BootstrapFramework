@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Adamina&family=Alice&family=Asap+Condensed:ital@0;1&family=Lobster&family=Merienda:wght@400;700&family=Roboto:ital,wght@0,300;1,300&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Adamina&family=Alice&family=Asap+Condensed:ital@0;1&family=Bebas+Neue&family=Lato&family=Lobster&family=Merienda:wght@400;700&family=Oswald&family=Poppins&family=Roboto:wght@300&display=swap"
         rel="stylesheet">
     <title>Check Balance</title>
 </head>
@@ -88,7 +88,155 @@
         </header>
         <section id="workingSpace" class="container-fluid p-0">
             <div class="row justify-content-center text-center">
-               
+                <div id="incomesTableContainer" class="col col-xl-4 col-lg-5 col-md-10 col-11 my-4">
+                    <table id="incomesTable" class="container-fluid mx-lg-1 px-2">
+                        <thead>
+                            <tr>
+                                <th colspan="3">Przychód Dla Poszczególnych Kategorii</th>
+                            </tr>
+                            <tr>
+                                <th class="positionNumber">Nr. pozycji</th>
+                                <th>Kategoria</th>
+                                <th>Wartość</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td>Wynagrodzenie</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>Odsetki bankowe</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>Sprzedaż na allegro</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td>Inne</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr class="active-row">
+                                <td colspan="2">SUMA PRZYCHODÓW</td>
+                                <td>1 PLN</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <div id="expensesTableContainer" class="col col-xl-4 col-lg-5 col-md-10 col-11 my-4">
+                    <table id="expensesTable" class="container-fluid mx-lg-1 px-2">
+                        <thead>
+                            <tr>
+                                <th colspan="3">Wydatki Dla Poszczególnych Kategorii</th>
+                            </tr>
+                            <tr>
+                                <th class="positionNumber">Nr. pozycji</th>
+                                <th>Kategoria</th>
+                                <th>Wartość</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td>Jedzenie</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>Mieszkanie</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>Transport</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td>Telekomunikacja</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>5.</td>
+                                <td>Opieka zdrowotna</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>6.</td>
+                                <td>Ubranie</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>7.</td>
+                                <td>Higiena</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>8.</td>
+                                <td>Dzieci</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>9.</td>
+                                <td>Rozrywka</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>10.</td>
+                                <td>Wycieczka</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>11.</td>
+                                <td>Szkolenia</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>12.</td>
+                                <td>Książki</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>13.</td>
+                                <td>Oszczędności</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>14.</td>
+                                <td>Na złotą jesień, czyli emeryturę</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>15.</td>
+                                <td>Spłata długów</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>16.</td>
+                                <td>Darowizna</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>17.</td>
+                                <td>Inne</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">SUMA WYDATKÓW</td>
+                                <td>0 PLN</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
             </div>
         </section>
     </main>
